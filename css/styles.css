@@ -1,0 +1,475 @@
+/* Joemol Joy - 8912316 */
+
+/* Common css for all pages */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #173a73;
+    color: #fff;
+    padding: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+main {
+    max-width: 900px;
+    flex: 1;
+    margin-left: 250px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.main {
+    padding: 0px 20px 20px 20px;
+    margin-left: 330px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #173a73;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Css for quiz page */
+
+#options {
+    display: flex;
+    flex-direction: column;
+}
+
+#options button {
+    margin-bottom: 10px;
+}
+
+.nextBtn {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 60px;
+    width: 130px;
+}
+
+#topDiv {
+    margin-left: 380px;
+    margin-bottom: 0;
+}
+
+#buttomDiv {
+    max-width: 900px;
+    margin: 3px auto 20px;
+    padding: 0px 20px 20px 20px;
+}
+
+.submitBtn {
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 170px;
+}
+
+.image-container img {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.quiz {
+    width: 600px;
+    margin: 20px 200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    position: relative;
+}
+
+button#resetBtn {
+    padding: 8px 16px;
+    margin: 10px 10px 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #173a73;
+    color: #fff;
+}
+
+button#resetBtn:hover {
+    background-color: #555;
+}
+
+.instructions {
+    display: none;
+    width: 550px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 250px;
+}
+
+.instructions h2 {
+    margin-top: 0;
+}
+
+#toggleInstructions {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#toggleInstructions:hover {
+    background-color: #555;
+}
+
+.feedbackImage {
+    display: flex;
+    align-items: center;
+}
+
+#feedback1 {
+    flex: 1;
+    margin: 0;
+}
+
+.correct-feedback {
+    color: green;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin: 0;
+}
+
+.wrong-feedback {
+    color: red;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin: 0;
+}
+
+.timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Css for about us page */
+
+#carousel {
+    margin: 0px 90px;
+}
+
+.button_panel {
+    height: 125px;
+
+    float: left;
+}
+
+#left_button {
+    padding: 50px 10px 15px 20px;
+}
+
+#right_button {
+    padding: 50px 15px 15px 0px;
+}
+
+.button_panel img {
+    width: 25px;
+    height: 25px;
+}
+
+#display_panel {
+    height: 200px;
+    width: 520px;
+    overflow: hidden;
+    float: left;
+}
+
+#image_list {
+    left: 0px;
+    position: relative;
+    width: 150px;
+    list-style: none;
+    white-space: nowrap;
+    transition: left 0.5s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+#image_list li {
+    display: inline-block;
+    width: 160px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#image_list li:last-child {
+    margin-right: 0;
+}
+
+#image_list li img {
+    width: 150px;
+}
+
+#image_list li p {
+    margin: 5px 0;
+}
+
+#team {
+    margin-bottom: 270px;
+    margin-right: 10px;
+}
+
+#about {
+    position: relative;
+    background-color: #bbc6d6da;
+    padding: 10px 10px 20px 30px;
+    border: 0.2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#team h3 {
+    font-weight: 800;
+}
+
+#about h2 {
+    color: #173a73;
+    font-weight: 900;
+}
+
+#aboutImg {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 600px;
+    top: 60px
+}
+
+#about p {
+    width: 580px;
+}
+
+.ui-tabs .ui-tabs-nav {
+    background: #bbc6d6da;
+}
+
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    background-color: #173a73;
+}
+
+/* Css for contact page */
+
+.contact-info {
+    width: 600px !important;
+    margin: 20px 100px !important;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #173a73;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    width: 600px !important;
+    margin: 20px 100px !important;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #173a73;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #173a73;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #173a73;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.notification {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.success {
+    background-color: #4CAF50;
+}
+
+.error {
+    background-color: #f44336;
+}
+
+/* Css for footer */
+
+footer {
+    background-color: #173a73;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-nav ul li a:hover {
+    color: #ff6347;
+}
+
+.footer-nav ul li:last-child {
+    margin-right: 0;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a.icon {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a.icon img {
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    background-color: #fff;
+    padding: 5px;
+}

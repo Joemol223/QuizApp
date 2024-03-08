@@ -1,0 +1,91 @@
+<!-- Joemol Joy - 8912316 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Quest - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="quiz.html"><img src="images/quizLogo.png" alt="Quiz Quest Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Quiz instructions and Reset -->
+        <div class="instructions" id="instructions">
+            <h2>Quiz Instructions</h2>
+            <p>Welcome to the Quiz Quest! These quizzes consists of multiple-choice questions. Read each question
+                carefully and select the correct answer. Each quiz has a timer, so answer quickly!</p>
+        </div>
+        <div id="topDiv">
+            <button id="showHideInstructions" title="Click to open">Open Instructions</button>
+            <button id="resetBtn" title="Click to reset">Reset Quizzes</button>
+        </div>
+        <!-- Quiz images and containers -->
+        <div id="buttomDiv">
+            <div class="image-container">
+                <img src="images/friends.jpg" alt="Image 1" id="image1" title="Click to start Friends quiz">
+                <img src="images/computer.png" alt="Image 2" id="image2" title="Click to start Computer quiz">
+            </div>
+            <div class="quiz" id="quiz1" style="display: none;">
+                <div class="timer" id="timer1"></div>
+                <div id="question1"></div>
+                <div id="options1"></div>
+                <div id="feedbackImage">
+                    <p id="feedback1"></p><input type="image" src="images/nextQuestion.png" id="nextBtn1"
+                        class="nextBtn" alt="next button" />
+                </div>
+                <button id="submitBtn1" class="submitBtn">Submit</button>
+
+            </div>
+            <div class="quiz" id="quiz2" style="display: none;">
+                <div class="timer" id="timer2"></div>
+                <div id="question2"></div>
+                <div id="options2"></div>
+                <div id="feedbackImage">
+                    <p id="feedback2"></p><input type="image" src="images/nextQuestion.png" id="nextBtn2"
+                        class="nextBtn" alt="next button" />
+                </div>
+                <button id="submitBtn2" class="submitBtn">Submit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="icon"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#" class="icon"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#" class="icon"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2023 Quiz Quest - Joemol Joy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/quiz.js"></script>
+
+</body>
+
+</html>
